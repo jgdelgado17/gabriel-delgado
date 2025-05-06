@@ -2,7 +2,7 @@ import { IoCloudDownloadSharp } from "react-icons/io5";
 
 const Hero = () => {
   return (
-      <section className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex items-center justify-center px-4">
+      <section className="min-h-screen bg-gradient-to-b from-gray-900 text-white flex items-center justify-center px-4 pt-20">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Jesus Gabriel Delgado Leal</h1>
           <p className="text-xl md:text-2xl mb-2">Ingeniero de Sistemas</p>

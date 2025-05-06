@@ -4,7 +4,6 @@ import {
   FaUser,
   FaCode,
   FaTools,
-  FaProjectDiagram,
   FaEnvelope,
   FaBars,
   FaTimes
@@ -16,7 +15,7 @@ const navItems = [
   { to: "/about", label: "Sobre mí", icon: <FaUser /> },
   { to: "/technologies", label: "Tecnologías", icon: <FaCode /> },
   { to: "/skills", label: "Habilidades", icon: <FaTools /> },
-  { to: "/projects", label: "Proyectos", icon: <FaProjectDiagram /> },
+  // { to: "/projects", label: "Proyectos", icon: <FaProjectDiagram /> },
   { to: "/contact", label: "Contacto", icon: <FaEnvelope /> },
 ];
 
@@ -32,7 +31,7 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="bg-gray-900/70 backdrop-blur-md text-white fixed w-full z-10 shadow-md dark:bg-gray-800/80">
+    <nav className="bg-gray-900/70 backdrop-blur-md text-white dark:bg-gray-800/80 fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Nombre + perfil */}
         <div className="flex items-center gap-3">
@@ -44,7 +43,7 @@ const Navbar = () => {
           <div className="flex flex-col leading-tight">
             <h1 className="text-sm font-bold italic">Jesus Gabriel Delgado Leal</h1>
             <h2 className="text-xs">Ingeniero de Sistemas</h2>
-            <p className="text-xs text-gray-400">Desarrollador web Full Stack</p>
+            <p className="text-xs text-gray-400">Desarrollador Full Stack</p>
           </div>
         </div>
 
