@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Redirigiendo...</title>
+    <script>
+        // Extrae la ruta actual y redirige a la misma pero con #
+        const path = window.location.pathname;
+        const search = window.location.search;
+        const hash = window.location.hash;
+        const newUrl = '/#' + path + search + hash;
+        window.location.replace(newUrl);
+    </script>
+</head>
+<body>
+<p>Redirigiendo...</p>
+</body>
+</html>
