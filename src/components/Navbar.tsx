@@ -9,7 +9,6 @@ import {
   FaBars,
   FaTimes
 } from "react-icons/fa";
-import { IoCloudDownloadSharp } from "react-icons/io5";
 import { useEffect, useState } from "react";
 
 const navItems = [
@@ -47,16 +46,6 @@ const Navbar = () => {
             <h2 className="text-xs">Ingeniero de Sistemas</h2>
             <p className="text-xs text-gray-400">Desarrollador web Full Stack</p>
           </div>
-        </div>
-
-        <div className="hidden md:block">
-          <a
-              href={`${process.env.PUBLIC_URL}${process.env.REACT_APP_CV_URL}`}
-              className="flex items-center gap-2 hover:text-blue-400 transition"
-              download
-          >
-            <IoCloudDownloadSharp /> Descargar CV
-          </a>
         </div>
 
         {/* Botones: darkmode + hamburguesa */}
