@@ -1,7 +1,6 @@
 import {
     FaBuilding,
     FaCalendarAlt,
-    FaBriefcase,
     FaJava,
     FaPython,
     FaHtml5,
@@ -20,9 +19,9 @@ import {
     SiApachekafka,
     SiRabbitmq,
     SiNestjs,
-    SiApache,
+    SiApachenifi
 } from "react-icons/si";
-import {JSX} from "react";
+import { JSX } from "react";
 
 const experiences = [
     {
@@ -69,28 +68,27 @@ const experiences = [
     },
 ];
 
-// Asignar colores y posibles íconos
 const getTechColor = (tech: string) => {
     const colors: { [key: string]: string } = {
-        Java: "bg-orange-100 text-orange-800 dark:bg-orange-800 dark:text-orange-100",
-        Python: "bg-yellow-100 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100",
-        HTML5: "bg-red-100 text-red-800 dark:bg-red-800 dark:text-red-100",
-        CSS: "bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-100",
-        JavaScript: "bg-yellow-200 text-yellow-900 dark:bg-yellow-700 dark:text-yellow-100",
-        React: "bg-cyan-100 text-cyan-800 dark:bg-cyan-800 dark:text-cyan-100",
-        Spring: "bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100",
-        "Spring Boot": "bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100",
-        PostgreSQL: "bg-indigo-100 text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100",
-        Oracle: "bg-purple-100 text-purple-800 dark:bg-purple-800 dark:text-purple-100",
-        SQL: "bg-teal-100 text-teal-800 dark:bg-teal-800 dark:text-teal-100",
-        Linux: "bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100",
-        Kafka: "bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-800 dark:text-fuchsia-100",
-        RabbitMQ: "bg-orange-200 text-orange-900 dark:bg-orange-700 dark:text-orange-100",
-        AWS: "bg-amber-100 text-amber-800 dark:bg-amber-800 dark:text-amber-100",
-        Docker: "bg-blue-200 text-blue-900 dark:bg-blue-700 dark:text-blue-100",
-        NestJS: "bg-pink-100 text-pink-800 dark:bg-pink-800 dark:text-pink-100",
-        "Apache Nifi": "bg-rose-100 text-rose-800 dark:bg-rose-800 dark:text-rose-100",
-        "Bases de datos": "bg-emerald-100 text-emerald-800 dark:bg-emerald-800 dark:text-emerald-100",
+        Java: "bg-orange-400 text-orange-800",
+        Python: "bg-yellow-100 text-yellow-800",
+        HTML5: "bg-red-100 text-red-800",
+        CSS: "bg-blue-100 text-blue-800",
+        JavaScript: "bg-yellow-200 text-yellow-900",
+        React: "bg-cyan-100 text-cyan-800",
+        Spring: "bg-green-100 text-green-800",
+        "Spring Boot": "bg-green-100 text-green-800",
+        PostgreSQL: "bg-indigo-100 text-indigo-800",
+        Oracle: "bg-purple-100 text-purple-800",
+        SQL: "bg-teal-100 text-teal-800",
+        Linux: "bg-gray-200 text-gray-800",
+        Kafka: "bg-fuchsia-100 text-fuchsia-800",
+        RabbitMQ: "bg-orange-200 text-orange-900",
+        AWS: "bg-amber-100 text-amber-800",
+        Docker: "bg-blue-200 text-blue-900",
+        NestJS: "bg-pink-100 text-pink-800",
+        "Apache Nifi": "bg-rose-100 text-purple-800",
+        "Bases de datos": "bg-emerald-100 text-emerald-800",
     };
 
     return colors[tech] || "bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100";
@@ -98,24 +96,24 @@ const getTechColor = (tech: string) => {
 
 const getTechIcon = (tech: string) => {
     const icons: { [key: string]: JSX.Element } = {
-        Java: <FaJava/>,
-        Python: <FaPython/>,
-        HTML5: <FaHtml5/>,
-        CSS: <FaCss3Alt/>,
-        JavaScript: <SiJavascript/>,
-        React: <FaReact/>,
-        "Spring Boot": <SiSpringboot/>,
-        PostgreSQL: <SiPostgresql/>,
-        Oracle: <SiOracle/>,
-        SQL: <FaDatabase/>,
-        Linux: <FaLinux/>,
-        Kafka: <SiApachekafka/>,
-        RabbitMQ: <SiRabbitmq/>,
-        AWS: <FaAws/>,
-        Docker: <FaDocker/>,
-        NestJS: <SiNestjs/>,
-        "Apache Nifi": <SiApache/>,
-        "Bases de datos": <FaDatabase/>,
+        Java: <FaJava />,
+        Python: <FaPython />,
+        HTML5: <FaHtml5 />,
+        CSS: <FaCss3Alt />,
+        JavaScript: <SiJavascript />,
+        React: <FaReact />,
+        "Spring Boot": <SiSpringboot />,
+        PostgreSQL: <SiPostgresql />,
+        Oracle: <SiOracle />,
+        SQL: <FaDatabase />,
+        Linux: <FaLinux />,
+        Kafka: <SiApachekafka />,
+        RabbitMQ: <SiRabbitmq />,
+        AWS: <FaAws />,
+        Docker: <FaDocker />,
+        NestJS: <SiNestjs />,
+        "Apache Nifi": <SiApachenifi />,
+        "Bases de datos": <FaDatabase />,
     };
 
     return icons[tech] || null;
@@ -124,27 +122,24 @@ const getTechIcon = (tech: string) => {
 const Experience = () => {
     return (
         <section className="px-4 py-12 bg-gradient-to-b from-gray-600 text-white pt-40">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white">
                     Experiencia Laboral
                 </h2>
 
-                <div className="space-y-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {experiences.map((exp, index) => (
                         <div
                             key={index}
-                            className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col md:flex-row gap-4 items-start md:items-center"
+                            className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col gap-4"
                         >
-                            <div className="text-blue-500 text-3xl">
-                                <FaBriefcase/>
-                            </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white flex items-center gap-2">
-                                    <FaBuilding className="text-gray-400 dark:text-gray-300"/>
+                                    <FaBuilding className="text-gray-400 dark:text-gray-300" />
                                     {exp.company}
                                 </h3>
                                 <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1 mb-2">
-                                    <FaCalendarAlt className="text-gray-400"/> {exp.period}
+                                    <FaCalendarAlt className="text-gray-400" /> {exp.period}
                                 </p>
                                 <p className="text-gray-700 dark:text-gray-300 mb-2">{exp.description}</p>
                                 <div className="flex flex-wrap gap-2 mt-2">
@@ -155,9 +150,9 @@ const Experience = () => {
                                                 tech
                                             )}`}
                                         >
-                      {getTechIcon(tech)}
+                                            {getTechIcon(tech)}
                                             {tech}
-                    </span>
+                                        </span>
                                     ))}
                                 </div>
                             </div>
