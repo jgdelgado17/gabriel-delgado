@@ -62,8 +62,9 @@ const Contact = () => {
                         className="w-full p-2 rounded border border-gray-300 text-black"
                     />
                     <input
-                        type="email"
+                        type="hidden"
                         name="email"
+                        value="jegadele@gmail.com"
                         placeholder="Mi correo aquí,  ej: jegadele@hotmail"
                         required
                         className="w-full p-2 rounded border border-gray-300 text-black"
