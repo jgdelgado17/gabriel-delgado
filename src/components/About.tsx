@@ -10,7 +10,7 @@ import {
 
 const About = () => {
     return (
-        <section className="min-h-screen p-8 bg-gray-100 text-gray-900 flex items-center pt-36">
+        <section className="min-h-screen p-8 bg-gradient-to-b from-gray-900 text-white flex items-center pt-36">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div
                     className="order-2 md:order-1 md:col-span-1 max-w-4xl mx-auto mt-12 bg-white p-6 rounded-lg shadow-md">
@@ -54,7 +54,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="order-1 md:order-2 md:col-span-1">
+                <div className="order-1 md:order-2 md:col-span-1 text-black">
                     <h2 className="text-3xl font-semibold mb-4">Sobre mí</h2>
                     <p className="mb-4">
                         Soy una persona curiosa, dedicada y con pasión por la tecnología. Me motiva aprender

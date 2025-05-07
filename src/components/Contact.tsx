@@ -1,15 +1,14 @@
-import { FaGithub, FaLinkedin, FaFacebook, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { PiMicrosoftOutlookLogoFill } from "react-icons/pi";
 import { SiGmail } from "react-icons/si";
-import {PiMicrosoftOutlookLogoFill} from "react-icons/pi";
 
-const Contact = () => {
+const Contact = () => {    
     return (
-        <section className="p-8 bg-white pt-40">
+        <section className="p-8 bg-gradient-to-b from-gray-900 text-white pt-40">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl font-semibold mb-8 text-center">Contacto</h2>
 
                 <div className="grid gap-6 md:grid-cols-2">
-                    {/* Redes Sociales */}
                     <div className="bg-gray-100 p-6 rounded-lg shadow-md">
                         <h3 className="text-xl font-semibold mb-4">Redes Sociales</h3>
                         <ul className="space-y-3">
@@ -48,8 +47,7 @@ const Contact = () => {
                             </li>
                         </ul>
                     </div>
-
-                    {/* Medios Directos */}
+                    
                     <div className="bg-gray-100 p-6 rounded-lg shadow-md">
                         <h3 className="text-xl font-semibold mb-4">Contacto Directo</h3>
                         <ul className="space-y-3">

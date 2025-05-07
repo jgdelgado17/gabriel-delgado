@@ -18,7 +18,10 @@ import {
     SiSpringboot,
     SiTypescript,
     SiReactos,
+    SiAmazondynamodb
 } from "react-icons/si";
+
+import { LuFileJson2 } from "react-icons/lu";
 
 const technologies = [
     { icon: FaJava, title: "Java", color: "text-[#f89820]" },
@@ -34,15 +37,17 @@ const technologies = [
     { icon: SiRabbitmq, title: "RabbitMQ", color: "text-orange-500" },
     { icon: SiApachekafka, title: "Kafka", color: "text-black" },
     { icon: SiApachenifi, title: "Apache Nifi", color: "text-purple-700" },
-    { icon: FaDatabase, title: "Bases de Datos", color: "text-gray-800" },
+    { icon: FaDatabase, title: "Bases de Datos Relacionales", color: "text-gray-800" },
     { icon: FaNodeJs, title: "Node.js", color: "text-green-600" },
     { icon: SiPodman, title: "Podman", color: "text-purple-500" },
     { icon: SiReactos, title: "WebFlux", color: "text-green-500" },
+    { icon: LuFileJson2, title: "Bases de Datos No Relacionales", color: "text-gray-600" },
+    { icon: SiAmazondynamodb, title: "DynamoDB", color: "text-yellow-600" },
 ];
 
 const Technologies = () => {
     return (
-        <section className="min-h-screen p-8 bg-white pt-40">
+        <section className="min-h-screen p-8 bg-gradient-to-b from-gray-900 text-white pt-40">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-semibold mb-8 text-center">Tecnologías</h2>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 justify-items-center">
@@ -54,7 +59,7 @@ const Technologies = () => {
                             <div className={`text-5xl ${color} transition-transform hover:scale-110`}>
                                 <Icon />
                             </div>
-                            <span className="mt-2 text-sm font-medium text-gray-700">{title}</span>
+                            <span className="mt-2 text-sm font-medium text-black">{title}</span>
                         </div>
                     ))}
                 </div>
