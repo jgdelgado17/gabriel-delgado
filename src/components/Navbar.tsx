@@ -48,7 +48,7 @@ const Navbar = () => {
             <div className="flex flex-col leading-tight">
               <h1 className="text-sm font-bold italic">Jesus Gabriel Delgado Leal</h1>
               <h2 className="text-xs">Ingeniero de Sistemas</h2>
-              <p className="text-xs text-gray-400">Desarrollador Full Stack</p>
+              <p className="text-xs text-gray-400">Desarrollador Backend</p>
             </div>
           </div>
 

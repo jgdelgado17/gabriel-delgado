@@ -10,7 +10,7 @@ import {
 
 const About = () => {
     return (
-        <section className="min-h-screen p-8 bg-gradient-to-b from-gray-900 text-white flex items-center pt-36">
+        <section className="min-h-screen p-8 bg-gradient-to-b from-gray-600 text-white flex items-center pt-36">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div
                     className="order-2 md:order-1 md:col-span-1 max-w-4xl mx-auto mt-12 bg-white p-6 rounded-lg shadow-md">

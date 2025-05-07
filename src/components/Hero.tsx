@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Jesus Gabriel Delgado Leal</h1>
           <p className="text-xl md:text-2xl mb-2">Ingeniero de Sistemas</p>
-          <p className="text-xl md:text-2xl mb-6">Desarrollador Full Stack</p>
+          <p className="text-xl md:text-2xl mb-6">Desarrollador Backend</p>
 
           <div className="mt-10 flex justify-center">
             <a

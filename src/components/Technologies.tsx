@@ -47,7 +47,7 @@ const technologies = [
 
 const Technologies = () => {
     return (
-        <section className="min-h-screen p-8 bg-gradient-to-b from-gray-900 text-white pt-40">
+        <section className="min-h-screen p-8 bg-gradient-to-b from-gray-600 text-white pt-40">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-semibold mb-8 text-center">Tecnologías</h2>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 justify-items-center">
