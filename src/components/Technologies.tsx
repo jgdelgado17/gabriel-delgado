@@ -47,7 +47,7 @@ const technologies = [
 
 const Technologies = () => {
     return (
-        <section className="min-h-screen p-8 bg-gradient-to-b from-gray-600 text-white pt-40">
+        <section className="min-h-screen p-8 bg-white dark:bg-gray-900 text-black dark:text-white bg-gradient-to-b from-gray-600 pt-40">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-semibold mb-8 text-center">Tecnologías</h2>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 justify-items-center">
@@ -59,7 +59,7 @@ const Technologies = () => {
                             <div className={`text-5xl ${color} transition-transform hover:scale-110`}>
                                 <Icon />
                             </div>
-                            <span className="mt-2 text-sm font-medium text-black">{title}</span>
+                            <span className="mt-2 text-sm font-medium">{title}</span>
                         </div>
                     ))}
                 </div>
