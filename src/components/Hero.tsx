@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="mt-10 flex justify-center gap-4">
           <a
             href={`${process.env.PUBLIC_URL}${process.env.REACT_APP_CV_URL}`}
-            className="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full flex items-center gap-3 shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            className="bg-blue-800 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-full flex items-center gap-3 shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
             download
           >
             <IoCloudDownloadSharp className="text-xl" />

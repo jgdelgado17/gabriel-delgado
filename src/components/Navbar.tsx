@@ -57,6 +57,7 @@ const Navbar = () => {
             <button
               onClick={toggleMenu}
               className="text-xl md:hidden hover:text-blue-400 transition"
+              name="menu-mobile-button"
             >
               {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
