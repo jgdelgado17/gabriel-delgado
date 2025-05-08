@@ -24,30 +24,30 @@ const About = () => {
                             Universidad de Pamplona.
                         </p>
                         <p className="flex items-center gap-2">
-                            <FaBriefcase className="text-purple-600 text-2xl"/>
+                            <FaBriefcase className="text-purple-600"/>
                             Experiencia en desarrollo backend y frontend en proyectos académicos y profesionales,
                             participando en equipos multidisciplinarios.
                         </p>
 
                         <p className="flex items-center gap-2">
-                            <FaLightbulb className="text-yellow-500 text-2xl"/>
+                            <FaLightbulb className="text-yellow-500"/>
                             He diseñado y mantenido aplicaciones empresariales con enfoque en rendimiento, escalabilidad
                             y buenas prácticas de desarrollo.
                         </p>
 
                         <p className="flex items-center gap-2">
-                            <FaProjectDiagram className="text-indigo-600 text-xl"/>
+                            <FaProjectDiagram className="text-indigo-600"/>
                             Familiarizado con metodologías ágiles como Scrum y uso de herramientas como Git, AWS y
                             Azure.
                         </p>
 
                         <p className="flex items-center gap-2">
-                            <FaLanguage className="text-red-500 text-xl"/>
+                            <FaLanguage className="text-red-500"/>
                             Idiomas: Español (nativo), Inglés (intermedio).
                         </p>
 
                         <p className="flex items-center gap-2">
-                            <FaStar className="text-yellow-500 text-2xl"/>
+                            <FaStar className="text-yellow-500"/>
                             Intereses: Inteligencia Artificial, DevOps, Arquitectura de Software y desarrollo con
                             impacto social.
                         </p>

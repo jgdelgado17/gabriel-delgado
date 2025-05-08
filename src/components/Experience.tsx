@@ -142,7 +142,7 @@ const Experience = () => {
                                     <FaCalendarAlt className="text-gray-400" /> {exp.period}
                                 </p>
                                 <p className="text-gray-700 dark:text-gray-300 mb-2">{exp.description}</p>
-                                <div className="flex flex-wrap gap-2 mt-2">
+                                <div className="flex flex-wrap gap-2 mt-2 justify-center">
                                     {exp.technologies.map((tech, i) => (
                                         <span
                                             key={i}

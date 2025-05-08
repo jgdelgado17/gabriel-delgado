@@ -8,16 +8,18 @@ import {
   FaTools,
   FaUser,
   FaBriefcase,
+  FaMoon,
+  FaCloudSun
 } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 
 const navItems = [
-  { to: "/", label: "Inicio", icon: <FaHome /> },
-  { to: "/about", label: "Sobre mí", icon: <FaUser /> },
-  { to: "/experience", label: "Experiencia", icon: <FaBriefcase /> },
-  { to: "/technologies", label: "Tecnologías", icon: <FaCode /> },
-  { to: "/skills", label: "Habilidades", icon: <FaTools /> },
-  { to: "/contact", label: "Contacto", icon: <FaEnvelope /> },
+  { to: "/", label: "Inicio", icon: <FaHome className="text-xl" /> },
+  { to: "/about", label: "Sobre mí", icon: <FaUser className="text-xl" /> },
+  { to: "/experience", label: "Experiencia", icon: <FaBriefcase className="text-xl" /> },
+  { to: "/technologies", label: "Tecnologías", icon: <FaCode className="text-xl" /> },
+  { to: "/skills", label: "Habilidades", icon: <FaTools className="text-xl" /> },
+  { to: "/contact", label: "Contacto", icon: <FaEnvelope className="text-xl" /> },
 ];
 
 interface NavbarProps {
@@ -54,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleTheme, isDark }) => {
               <div className="flex flex-col leading-tight">
                 <h1 className="text-sm font-bold italic">Jesus Gabriel Delgado Leal</h1>
                 <h2 className="text-xs">Ingeniero de Sistemas</h2>
-                <p className="text-xs text-gray-400">Desarrollador Backend</p>
+                <p className="text-xs">Desarrollador Backend</p>
               </div>
             </div>
 
@@ -65,8 +67,8 @@ const Navbar: React.FC<NavbarProps> = ({ toggleTheme, isDark }) => {
                       key={item.to}
                       to={item.to}
                       className={({ isActive }) =>
-                          `flex items-center gap-2 hover:text-blue-400 transition ${
-                              isActive ? "text-blue-400" : ""
+                          `flex items-center gap-2 hover:text-blue-500 transition ${
+                              isActive ? "text-blue-500" : ""
                           }`
                       }
                   >
@@ -81,7 +83,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleTheme, isDark }) => {
               <button
                   onClick={toggleTheme}
               >
-                {isDark ? "☀️ Claro" : "🌙 Oscuro"}
+                {isDark ? <FaCloudSun className="text-yellow-400 text-2xl" /> : <FaMoon className="text-gray-600 text-xl" />}
               </button>
               <button
                   onClick={toggleMenu}
@@ -104,8 +106,8 @@ const Navbar: React.FC<NavbarProps> = ({ toggleTheme, isDark }) => {
                     key={item.to}
                     to={item.to}
                     className={({ isActive }) =>
-                        `flex items-center gap-2 hover:text-blue-400 transition ${
-                            isActive ? "text-blue-400" : ""
+                        `flex items-center gap-2 hover:text-blue-500 transition ${
+                            isActive ? "text-blue-500" : ""
                         }`
                     }
                 >

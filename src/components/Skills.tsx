@@ -1,15 +1,24 @@
-import { FaCode, FaUsers, FaBug, FaGitAlt, FaLightbulb, FaProjectDiagram } from "react-icons/fa";
+import {FaCode, FaUsers, FaBug, FaGitAlt, FaLightbulb, FaProjectDiagram} from "react-icons/fa";
+import { MdOutlineCleanHands, MdAutoAwesome } from "react-icons/md";
+import { ImParagraphLeft } from "react-icons/im";
+import { SiBlackmagicdesign } from "react-icons/si";
 
 const skills = {
     Técnicas: [
         { label: "Código limpio", icon: <FaCode /> },
+        { label: "SOLID", icon: <ImParagraphLeft /> },
         { label: "Pruebas unitarias", icon: <FaBug /> },
-        { label: "Manejo de Git y GitHub", icon: <FaGitAlt /> },
+        { label: "Git y GitHub", icon: <FaGitAlt /> },
+        { label: "Arquitectura limpia", icon: <MdOutlineCleanHands /> },
+        { label: "Patrones de diseño", icon: <SiBlackmagicdesign /> },
+        { label: "Metodologías ágiles", icon: <FaProjectDiagram /> },
+        { label: "Integración continua", icon: <FaProjectDiagram /> },
     ],
     Blandas: [
         { label: "Resolución de problemas", icon: <FaLightbulb /> },
         { label: "Trabajo en equipo", icon: <FaUsers /> },
-        { label: "Metodologías ágiles (Scrum)", icon: <FaProjectDiagram /> },
+        { label: "Integración y adaptabilidad", icon: <FaProjectDiagram /> },
+        { label: "Autodidacta", icon: <MdAutoAwesome /> },
     ],
 };
 
