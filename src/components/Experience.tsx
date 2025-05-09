@@ -19,7 +19,8 @@ import {
     SiApachekafka,
     SiRabbitmq,
     SiNestjs,
-    SiApachenifi
+    SiApachenifi,
+    SiReactos
 } from "react-icons/si";
 import { JSX } from "react";
 
@@ -41,6 +42,7 @@ const experiences = [
         technologies: [
             "Java",
             "Spring Boot",
+            "WebFlux",
             "NestJS",
             "Kafka",
             "RabbitMQ",
@@ -78,6 +80,7 @@ const getTechColor = (tech: string) => {
         React: "bg-cyan-100 text-cyan-800",
         Spring: "bg-green-100 text-green-800",
         "Spring Boot": "bg-green-100 text-green-800",
+        WebFlux: "bg-green-100 text-green-500",
         PostgreSQL: "bg-indigo-100 text-indigo-800",
         Oracle: "bg-purple-100 text-purple-800",
         SQL: "bg-teal-100 text-teal-800",
@@ -103,6 +106,7 @@ const getTechIcon = (tech: string) => {
         JavaScript: <SiJavascript />,
         React: <FaReact />,
         "Spring Boot": <SiSpringboot />,
+        WebFlux: <SiReactos />,
         PostgreSQL: <SiPostgresql />,
         Oracle: <SiOracle />,
         SQL: <FaDatabase />,
