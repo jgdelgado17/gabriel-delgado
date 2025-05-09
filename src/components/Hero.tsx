@@ -8,8 +8,7 @@ const Hero = () => {
             className="relative min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white bg-gradient-to-b from-gray-600 flex items-center justify-between px-4 pt-20 bg-right bg-no-repeat bg-cover bg-fixed"
             style={{ backgroundImage: `url(${backgroundUrl})` }}
         >
-            {/* Overlay modificado */}
-            <div className="absolute inset-0 bg-white/50 dark:bg-gray-800/20 z-0"></div>
+            <div className="absolute inset-0 bg-white/30 dark:bg-gray-800/20 z-0"></div>
 
             <div className="relative z-10 w-full md:w-1/2 text-center">
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">Jesus Gabriel Delgado Leal</h1>

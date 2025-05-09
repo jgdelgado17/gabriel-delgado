@@ -13,9 +13,9 @@ const About = () => {
         <section className="min-h-screen p-8 bg-white dark:bg-gray-900 text-black dark:text-white bg-gradient-to-b from-gray-600 pt-36">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div
-                    className="order-2 md:order-1 md:col-span-1 max-w-4xl mx-auto mt-12 p-6 rounded-lg shadow-md">
+                    className="order-2 md:order-1 md:col-span-1 max-w-4xl mx-auto mt-12 p-6">
                     <div className="space-y-3">
-                        <h3 className="text-2xl font-semibold">Información Personal</h3>
+                        <h1 className="text-2xl font-semibold">Información Personal</h1>
                         <p className="flex items-center gap-2">
                             <FaMapMarkerAlt className="text-blue-600"/> Vivo actualmente en Pamplona, Colombia.
                         </p>
@@ -54,8 +54,8 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="order-1 md:order-2 md:col-span-1 p-6 rounded-lg shadow-md">
-                    <h2 className="text-3xl font-semibold mb-4">Sobre mí</h2>
+                <div className="order-1 md:order-2 md:col-span-1 p-6">
+                    <h1 className="text-3xl font-semibold mb-4">Sobre mí</h1>
                     <p className="mb-4">
                         Soy una persona curiosa, dedicada y con pasión por la tecnología. Me motiva aprender
                         continuamente y enfrentar nuevos desafíos técnicos y creativos.

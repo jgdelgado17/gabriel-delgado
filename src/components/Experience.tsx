@@ -124,7 +124,7 @@ const Experience = () => {
         <section className="px-4 py-12 bg-gradient-to-b from-gray-600 text-white pt-40">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white">
-                    Experiencia Laboral
+                    Experiencia Profesional
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

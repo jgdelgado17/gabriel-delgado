@@ -35,7 +35,7 @@ const Contact = () => {
 
                 <div className="relative bg-white dark:bg-gray-800 text-black dark:text-white p-6 rounded-lg shadow-md z-10">
                     <h2 className="text-2xl sm:text-4xl font-extrabold mb-6 text-center bg-white dark:bg-gray-800 text-black dark:text-white">
-                        Contactame
+                        Envíame un mensaje
                     </h2>
 
                     <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
