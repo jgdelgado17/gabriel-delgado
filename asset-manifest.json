@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gabriel-delgado/static/css/main.865f43cc.css",
-    "main.js": "/gabriel-delgado/static/js/main.21c06459.js",
+    "main.js": "/gabriel-delgado/static/js/main.8ec22dfa.js",
     "static/js/453.62c026f1.chunk.js": "/gabriel-delgado/static/js/453.62c026f1.chunk.js",
     "index.html": "/gabriel-delgado/index.html",
     "main.865f43cc.css.map": "/gabriel-delgado/static/css/main.865f43cc.css.map",
-    "main.21c06459.js.map": "/gabriel-delgado/static/js/main.21c06459.js.map",
+    "main.8ec22dfa.js.map": "/gabriel-delgado/static/js/main.8ec22dfa.js.map",
     "453.62c026f1.chunk.js.map": "/gabriel-delgado/static/js/453.62c026f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.865f43cc.css",
-    "static/js/main.21c06459.js"
+    "static/js/main.8ec22dfa.js"
   ]
 }
