@@ -32,12 +32,10 @@ const Contact = () => {
     return (
         <section className="p-8 bg-gradient-to-b from-gray-600 text-white pt-40">
             <div className="relative max-w-2xl mx-auto">
-                <div className="absolute inset-0 rounded-lg p-[6px] z-0 animate-ping">
-                    <div className="w-full h-full rounded-lg bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 filter blur-lg opacity-80"></div>
-                </div>
-                <div className="relative bg-gray-100 p-6 rounded-lg shadow-md z-10">
-                    <h2 className="text-2xl sm:text-4xl font-extrabold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-gray-600 to-gray-800">
-                        Contactame
+
+                <div className="relative bg-white dark:bg-gray-800 text-black dark:text-white p-6 rounded-lg shadow-md z-10">
+                    <h2 className="text-2xl sm:text-4xl font-extrabold mb-6 text-center bg-white dark:bg-gray-800 text-black dark:text-white">
+                        Envíame un mensaje
                     </h2>
 
                     <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
@@ -52,14 +50,6 @@ const Contact = () => {
                             type="text"
                             name="title"
                             placeholder="Asunto"
-                            required
-                            className="w-full p-2 rounded border border-gray-300 text-black"
-                        />
-                        <input
-                            type="hidden"
-                            name="email"
-                            value="jegadele@gmail.com"
-                            placeholder="Mi correo aquí,  ej: jegadele@hotmail"
                             required
                             className="w-full p-2 rounded border border-gray-300 text-black"
                         />
@@ -80,25 +70,25 @@ const Contact = () => {
                         </div>
                         {sent && <p className="text-green-600 mt-2">Mensaje enviado correctamente 🎉</p>}
                     </form>
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-6">
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-6 ">
                         <div className="flex items-center gap-2">
-                            <FaGithub className="text-gray-800 text-xl"/>
+                            <FaGithub className="bg-white dark:bg-gray-800 text-black dark:text-white text-xl"/>
                             <a
                                 href="https://github.com/jgdelgado17"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline"
+                                className="bg-white dark:bg-gray-800 text-black dark:text-white hover:underline"
                             >
                                 github.com
                             </a>
                         </div>
                         <div className="flex items-center gap-2">
-                            <FaLinkedin className="text-blue-700 text-xl"/>
+                            <FaLinkedin className="bg-white dark:bg-gray-800 text-black dark:text-white text-xl"/>
                             <a
                                 href="https://www.linkedin.com/in/jesus-gabriel-delgado-leal-ab958a1a1/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline"
+                                className="bg-white dark:bg-gray-800 text-black dark:text-white hover:underline"
                             >
                                 linkedin.com
                             </a>
