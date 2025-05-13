@@ -1,4 +1,6 @@
 import { IoCloudDownloadSharp } from "react-icons/io5";
+import { FaJava, FaCode, FaDatabase, FaCog, FaReact } from "react-icons/fa";
+import { SiSpring, SiReactos } from "react-icons/si";
 
 const Hero = () => {
     const backgroundUrl = `${process.env.PUBLIC_URL}${process.env.REACT_APP_HERO_BG_URL}`;
@@ -15,6 +17,18 @@ const Hero = () => {
                 <p className="text-xl md:text-2xl mb-2">Ingeniero de Sistemas</p>
                 <p className="text-xl md:text-2xl mb-6">Desarrollador Backend</p>
 
+                {/* Íconos de stack */}
+                <div className="flex justify-center gap-6 mt-6 text-3xl text-gray-800 dark:text-white">
+                    <FaCode title="Código" />
+                    <FaJava title="Java" className="text-orange-600" />
+                    <SiSpring title="Spring Boot" className="text-green-700" />
+                    <SiReactos title="WebFlux" className="text-green-500" />
+                    <FaDatabase title="Bases de datos" className="text-purple-600" />
+                    <FaReact title="React JS" className="text-blue-500" />
+                    <FaCog title="Arquitectura" className="text-gray-500 dark:text-gray-300" />
+                </div>
+
+                {/* Botón de descarga */}
                 <div className="mt-10 flex justify-center gap-4">
                     <a
                         href={`${process.env.PUBLIC_URL}${process.env.REACT_APP_CV_URL}`}
