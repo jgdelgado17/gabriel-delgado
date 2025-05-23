@@ -85,7 +85,7 @@ const Contact = () => {
                         <div className="flex items-center gap-2">
                             <FaLinkedin className="bg-white dark:bg-gray-800 text-black dark:text-white text-xl"/>
                             <a
-                                href="https://www.linkedin.com/in/jesus-gabriel-delgado-leal-ab958a1a1/"
+                                href="https://www.linkedin.com/in/jesus-gabriel-delgado-leal/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white dark:bg-gray-800 text-black dark:text-white hover:underline"
